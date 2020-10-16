@@ -5,7 +5,7 @@ import time
 dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
 
 
-
+#It's not neatly written, but I don't want to get too indepth on a short assignment 
 
 while True:
     print("SOS")
