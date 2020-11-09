@@ -12,4 +12,4 @@
 
 <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/IMG_0873.jpg?raw=true" width="300">
 
-###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/CapTouchServo.py"><Link to the Code</a>
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/CapTouchServo.py">Link to the Code</a>
