@@ -24,3 +24,6 @@ In this assignment, I controled a servo using capacitive touch. If I touched a w
 ###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/CirPyLCD.py">Link to the Code</a>
 
 In this assignment, I used my knowledge of capacitive touch and LCDs to control a counter displayed on a LCD. If I touched a wire to A4 the counter went up and if I touched a wire to A1 the counter went down. Getting all the libraries set up actully went fairly smoothly for me. I had to find a "real" computer (not chromebook) to update my Metro Express, but once I did that, I didn't have any problems. To ensure the counter only went up/down one when the wire was touched (instead of going up/down continually), I added a variable for the last state it was in. When the wire was removed, it would return a state of 0, whereas if it was touching the pin it would return a state of 1. The counting code would only run if the previous return was 0. I also had trouble with printing integers to my LCD. In the end, I ended up just using str() to turn the counter variable into a string. 
+
+NOTE: I just realized while writing this description that I forgot to include a count direction on my LCD. It's a small enough thing I'm not going to go back and add it at this point, but I feel like I should acknowledge that I left it out. 
+
