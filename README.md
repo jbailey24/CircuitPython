@@ -27,3 +27,6 @@ In this assignment, I used my knowledge of capacitive touch and LCDs to control 
 
 NOTE: I just realized while writing this description that I forgot to include a count direction on my LCD. It's a small enough thing I'm not going to go back and add it at this point, but I feel like I should acknowledge that I left it out. 
 
+## Photointerrupter
+
+<img src="https://github.com/jbailey24/CircuitPython/blob/main/media/IMG_0922.jpg?raw=true" width="200">
