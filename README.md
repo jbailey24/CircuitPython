@@ -30,3 +30,5 @@ NOTE: I just realized while writing this description that I forgot to include a 
 ## Photointerrupter
 
 <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/IMG_0922.jpg?raw=true" width="200">
+
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/Photointerrupter.py">Link to the Code</a>
