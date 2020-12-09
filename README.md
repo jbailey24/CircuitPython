@@ -34,3 +34,7 @@ NOTE: I just realized while writing this description that I forgot to include a 
 ###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/Photointerrupter.py">Link to the Code</a>
 
 In this assignment, I measured the number of times a photointerrupter was interrupted and displayed it on an lcd. I was delighted to find that I didn't encounter any problems getting it to work. Thanks to the lovely people on the internet, I was able to figure out how to "pull up" the digital pin and write a delay without using sleep(). Adding the lcd was super easy and took about two seconds because I could just borrow from the previous assignment. 
+
+## Distance Sensor
+
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/Distance.py">Link to the Code</a>
