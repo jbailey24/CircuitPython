@@ -51,6 +51,6 @@ More difficult was the neopixel. One way to achieve the rainbow effect would be 
 <br>
 To get a general idea of what each equation would look like, I thought about the values of the color as the distance increased from 5 to 35. Red would start out at 255 and slowly fade so that by 20 it equalled 0. Green would start at 0, begin to rise at 20, and reach 255 at 35. Blue would start a 0, rise until at 20 it was 255, and then fall so that by 35 it was again 0. In short, When graphed, they would be curves with different means. For the curve formula, I first tried the Gaussian function which looks like this:
 
-<img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%204.35.56%20PM.png?raw=true" width="400">
+<img src="https://github.com/jbailey24/CircuitPython/blob/main/media/maxresdefault.jpg?raw=true" width="200"><img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%204.35.56%20PM.png?raw=true" width="250">
 
 
