@@ -43,5 +43,9 @@ In this assignment, I used an ultrasonic distance sensor to measure distance and
 
 <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/color%20spectrum%20(1).png?raw=true" width="400">
 
-Ultrasonic sensors work by sending out ultrasonic waves, which bounce off of nearby objects back towards the sensor. The sensor receives the waves and is able to calculate the distance based on the time between when the signal was sent and received. To simplify things, <a href="https://github.com/adafruit/Adafruit_CircuitPython_HCSR04/blob/master/adafruit_hcsr04.py">this library</a> does the math for you so all that's needed is ``` sonar.distance``` to measure the distance.
+Ultrasonic sensors work by sending out ultrasonic waves, which bounce off of nearby objects back towards the sensor. The sensor receives the waves and is able to calculate the distance based on the time between when the signal was sent and received. To simplify things, <a href="https://github.com/adafruit/Adafruit_CircuitPython_HCSR04/blob/master/adafruit_hcsr04.py">this library</a> does the math for you so all that's needed is ` sonar.distance` to measure the distance.
+<br>
+<br>
+More difficult was the neopixel. One way to achieve the rainbow effect would be to use if statments to assign a range of distances per one color, but this would look choppy as there would only be a few set colors, and not to mention lots of uneccesary code. 
+
 
