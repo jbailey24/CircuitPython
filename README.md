@@ -39,8 +39,9 @@ In this assignment, I measured the number of times a photointerrupter was interr
 
 ###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/Distance.py">Link to the Code</a>
 
-In this assignment, I used an ultra sonic distance sensor to measure distance and the buit-in Metro Express neopixel to display a coresponding color according to the scale below.
+In this assignment, I used an ultrasonic distance sensor to measure distance and the buit-in Metro Express neopixel to display a coresponding color according to the scale below.
 
 <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/color%20spectrum%20(1).png?raw=true" width="400">
 
+Ultrasonic sensors work by sending out ultrasonic waves, which bounce off of nearby objects back towards the sensor. The sensor receives the waves and is able to calculate the distance based on the time between when the signal was sent and received. To simplify things, <a href="https://github.com/adafruit/Adafruit_CircuitPython_HCSR04/blob/master/adafruit_hcsr04.py">this library</a> does the math for you so all that's needed is ``` sonar.distance``` to measure the distance.
 
