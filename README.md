@@ -41,7 +41,9 @@ In this assignment, I measured the number of times a photointerrupter was interr
 
 In this assignment, I used an ultrasonic distance sensor to measure distance and the buit-in Metro Express neopixel to display a coresponding color according to the scale below.
 
-<img src="https://github.com/jbailey24/CircuitPython/blob/main/media/color%20spectrum%20(1).png?raw=true" width="400">
+<p align="center">
+  <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/color%20spectrum%20(1).png?raw=true" width="400">
+</p>
 
 Ultrasonic sensors work by sending out ultrasonic waves, which bounce off of nearby objects back towards the sensor. The sensor receives the waves and is able to calculate the distance based on the time between when the signal was sent and received. To simplify things, <a href="https://github.com/adafruit/Adafruit_CircuitPython_HCSR04/blob/master/adafruit_hcsr04.py">this library</a> does the math for you, so all that I needed was ` sonar.distance` to measure the distance.
 <br>
@@ -51,6 +53,8 @@ More difficult was the neopixel. One way to achieve the rainbow effect would be 
 <br>
 To get a general idea of what each equation would look like, I thought about the values of the color as the distance increased from 5 to 35. Red would start out at 255 and slowly fade so that by 20 it equalled 0. Green would start at 0, begin to rise at 20, and reach 255 at 35. Blue would start a 0, rise until at 20 it was 255, and then fall so that by 35 it was again 0. In short, When graphed, they would be curves with different means. For the curve formula, I first tried the Gaussian function which looks like this:
 
-<img src="https://github.com/jbailey24/CircuitPython/blob/main/media/maxresdefault.jpg?raw=true" width="300"><img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%204.35.56%20PM.png?raw=true" width="200">
+<p align="center">
+  <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/maxresdefault.jpg?raw=true" width="300"><img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%204.35.56%20PM.png?raw=true" width="200">
+ </p>
 
 
