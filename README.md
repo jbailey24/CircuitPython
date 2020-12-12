@@ -38,3 +38,9 @@ In this assignment, I measured the number of times a photointerrupter was interr
 ## Distance Sensor
 
 ###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/Distance.py">Link to the Code</a>
+
+In this assignment, I used an ultra sonic distance sensor to measure distance and the buit-in Metro Express neopixel to display a coresponding color according to the scale below.
+
+<img src="https://github.com/jbailey24/CircuitPython/blob/main/media/IMG_0922.jpg?raw=true" width="200">
+
+
