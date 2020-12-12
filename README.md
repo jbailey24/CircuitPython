@@ -56,5 +56,14 @@ To get a general idea of what each equation would look like, I thought about the
 <p align="center">
   <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/maxresdefault.jpg?raw=true" width="300"><img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%204.35.56%20PM.png?raw=true" width="200">
  </p>
+But I decided to change it around some, so it looked like this:
 
+<p align="center">
+  <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%204.36.31%20PM.png?raw=true" width="190">                           </p>                                                                                                        
+                                                                                                                                         
+because the plateau would let the color linger longer on the primary colors. The means for the equations were 5 for red, 35 for green, and 20 for blue, but I still needed to find the standard deviation. Knowing that the distance between 255 and (approximately) 0 should be 15, I found that 7.75 worked best. The last variable that I needed to find was the multiplier. To have the proper outputs, the maximum y value had to be 255, but without the multiplier, it was much lower. I found it by setting the equation equal to 255 when x equaled the mean and solved for a, which turned out to be 1976.25. And so, the final equations looked like this:
 
+<p align="center">
+  <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/canvas.png?raw=true" width="200"><img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%203.35.29%20PM.png?raw=true" width="300">
+</p> 
+To see the full range of colors run <a href="https://github.com/jbailey24/CircuitPython/blob/main/Rainbow.py">this code</a>. Because these equations only work from 5 to 35, outside of that range the neopixel is either soild red or green. 
