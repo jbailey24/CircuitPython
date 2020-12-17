@@ -67,3 +67,11 @@ because the plateau would let the color linger longer on the primary colors. The
   <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/canvas.png?raw=true" width="200"><img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%203.35.29%20PM.png?raw=true" width="300">
 </p> 
 To see the full range of colors run <a href="https://github.com/jbailey24/CircuitPython/blob/main/Rainbow.py">this code</a>. Because these equations only work from 5 to 35, outside of that range the neopixel is either soild red or green. While I didn't find the actual distance sensor part of the assignment too difficult, getting the neopixel to work was very rewarding and this was overall a very enjoyable challenge.
+
+
+## Classes, Objects, and Modules
+
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/rgb.py">Link to Library</a>
+
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/rgbRun.py">Link to Code</a>
+
