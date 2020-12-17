@@ -72,6 +72,5 @@ To see the full range of colors run <a href="https://github.com/jbailey24/Circui
 ## Classes, Objects, and Modules
 
 ###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/rgb.py">Link to Library</a>
-
 ###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/rgbRun.py">Link to Code</a>
 
