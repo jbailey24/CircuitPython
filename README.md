@@ -84,7 +84,7 @@ class Dog:
      kind = "canine"
  
      def __init__(self, breed, age):
-          self.breed = breed # instance variable unique to each instance
+          self.breed = breed 
           self.age = age
           self.tricks = []
 
