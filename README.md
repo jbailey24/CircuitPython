@@ -94,3 +94,28 @@ class Dog:
      def bark(self):
           return "arf"
 ```
+```
+from dog import Dog
+
+Rex = Dog("Golden", 8)      
+Spot = Dog("Pit Bull", 12)  
+Rex.addTrick("roll over")  
+Spot.addTrick("sit")       
+Spot.addTrick("play dead") 
+
+print(Rex.kind)         
+print(Spot.kind)
+print(Rex.breed)         
+print(Rex.age)    
+print(Spot.breed)
+print(Spot.age)
+print(Rex.tricks)       
+print(Spot.tricks)
+
+Spot.age += 1              
+Spot.weight = 70            # this is bad form.
+
+print(Spot.age)            
+print(Spot.weight)          # you're allowed to do this, but ew.
+print(Spot.bark())  
+```
