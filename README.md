@@ -34,3 +34,36 @@ NOTE: I just realized while writing this description that I forgot to include a 
 ###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/Photointerrupter.py">Link to the Code</a>
 
 In this assignment, I measured the number of times a photointerrupter was interrupted and displayed it on an lcd. I was delighted to find that I didn't encounter any problems getting it to work. Thanks to the lovely people on the internet, I was able to figure out how to "pull up" the digital pin and write a delay without using sleep(). Adding the lcd was super easy and took about two seconds because I could just borrow from the previous assignment. 
+
+## Distance Sensor
+
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/Distance.py">Link to the Code</a>
+
+In this assignment, I used an ultrasonic distance sensor to measure distance and the buit-in Metro Express neopixel to display a coresponding color according to the scale below.
+
+<p align="center">
+  <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/color%20spectrum%20(1).png?raw=true" width="400">
+</p>
+
+Ultrasonic sensors work by sending out ultrasonic waves, which bounce off of nearby objects back towards the sensor. The sensor receives the waves and is able to calculate the distance based on the time between when the signal was sent and received. To simplify things, <a href="https://github.com/adafruit/Adafruit_CircuitPython_HCSR04/blob/master/adafruit_hcsr04.py">this library</a> does the math for you, so all that I needed was ` sonar.distance` to measure the distance.
+<br>
+<br>
+More difficult was the neopixel. One way to achieve the rainbow effect would be to use if statments to assign a range of distances per one color, but this would look choppy as there would only be a few set colors, and not to mention there would be lots of uneccesary code. A more ideal way would be to have, for any input value, a unique output color value. Color value is assigned based on the amounts of red (r), green (g), and blue (b), each measured on a scale from 0 to 255, so this can be done by using a formula which solves for a value of r, g, or b based on the input and stringing the values together. This does mean that I needed to find those formulas though. 
+<br>
+<br>
+To get a general idea of what each equation would look like, I thought about the values of the color as the distance increased from 5 to 35. Red would start out at 255 and slowly fade so that by 20 it equalled 0. Green would start at 0, begin to rise at 20, and reach 255 at 35. Blue would start a 0, rise until at 20 it was 255, and then fall so that by 35 it was again 0. In short, When graphed, they would be curves with different means. For the curve formula, I first tried the Gaussian function which looks like this:
+
+<p align="center">
+  <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/maxresdefault.jpg?raw=true" width="300"><img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%204.35.56%20PM.png?raw=true" width="200">
+ </p>
+But I decided to change it around some, so it looked like this:
+
+<p align="center">
+  <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%204.36.31%20PM.png?raw=true" width="190">                           </p>                                                                                                        
+                                                                                                                                         
+because the plateau would let the color linger longer on the primary colors. The means for the equations were 5 for red, 35 for green, and 20 for blue, but I still needed to find the standard deviation. Knowing that the distance between 255 and (approximately) 0 should be 15, I found that 7.75 worked best. The last variable that I needed to find was the multiplier. To have the proper outputs, the maximum y value had to be 255, but without the multiplier, it was much lower. I found it by setting the equation equal to 255 when x equaled the mean and solved for a, which turned out to be 1976.25. And so, the final equations looked like this:
+
+<p align="center">
+  <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/canvas.png?raw=true" width="200"><img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%203.35.29%20PM.png?raw=true" width="300">
+</p> 
+To see the full range of colors run <a href="https://github.com/jbailey24/CircuitPython/blob/main/Rainbow.py">this code</a>. Because these equations only work from 5 to 35, outside of that range the neopixel is either soild red or green. While I didn't find the actual distance sensor part of the assignment too difficult, getting the neopixel to work was very rewarding and this was overall a very enjoyable challenge.
