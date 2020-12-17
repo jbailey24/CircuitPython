@@ -74,3 +74,8 @@ To see the full range of colors run <a href="https://github.com/jbailey24/Circui
 ###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/rgb.py">Link to Library</a>
 ###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/rgbRun.py">Link to Code</a>
 
+<p align="center">
+<img src="https://github.com/jbailey24/CircuitPython/blob/main/media/IMG_0956.jpg?raw=true" width="300">
+</p>
+
+In this assignmnet, I created a library for rgb led colors. Instead of assigning color values in your main code, with the library you can reference the library and just call the color name. The assignment wasn't too difficult, but learning about the aplication of classes and modules was interesting. I found the dog example in the assignment description very helpful.
