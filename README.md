@@ -78,4 +78,19 @@ To see the full range of colors run <a href="https://github.com/jbailey24/Circui
 <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/IMG_0956.jpg?raw=true" width="300">
 </p>
 
-In this assignmnet, I created a library for rgb led colors. Instead of assigning color values in your main code, with the library you can reference the library and just call the color name. The assignment wasn't too difficult, but learning about the aplication of classes and modules was interesting. I found the dog example in the assignment description very helpful.
+In this assignmnet, I created a library for rgb led colors. Instead of assigning color values in your main code, with the library you can reference the library and just call the color name. The assignment wasn't too difficult, but learning about the aplication of classes and modules was interesting. I found the dog example in the assignment description very helpful, so I'm going to put it in here for when I inevitably forget how to do this, and come looking to this page for answers.
+'''
+class Dog:
+     kind = "canine"
+ 
+     def __init__(self, breed, age):
+          self.breed = breed # instance variable unique to each instance
+          self.age = age
+          self.tricks = []
+
+     def addTrick(self, trick):
+          self.tricks.append(trick)
+
+     def bark(self):
+          return "arf"
+'''
