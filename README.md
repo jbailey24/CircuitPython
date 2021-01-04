@@ -67,3 +67,55 @@ because the plateau would let the color linger longer on the primary colors. The
   <img src="https://github.com/jbailey24/CircuitPython/blob/main/media/canvas.png?raw=true" width="200"><img src="https://github.com/jbailey24/CircuitPython/blob/main/media/Screenshot%202020-12-07%20at%203.35.29%20PM.png?raw=true" width="300">
 </p> 
 To see the full range of colors run <a href="https://github.com/jbailey24/CircuitPython/blob/main/Rainbow.py">this code</a>. Because these equations only work from 5 to 35, outside of that range the neopixel is either soild red or green. While I didn't find the actual distance sensor part of the assignment too difficult, getting the neopixel to work was very rewarding and this was overall a very enjoyable challenge.
+
+
+## Classes, Objects, and Modules
+
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/rgb.py">Link to Library</a>
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/rgbRun.py">Link to Code</a>
+
+<p align="center">
+<img src="https://github.com/jbailey24/CircuitPython/blob/main/media/IMG_0956.jpg?raw=true" width="300">
+</p>
+
+In this assignmnet, I created a library for rgb led colors. Instead of assigning color values in your main code, with the library you can reference the library and just call the color name. The assignment wasn't too difficult, but learning about the aplication of classes and modules was interesting. I found the dog example in the assignment description very helpful, so I'm going to put it in here for when I inevitably forget how to do this, and come looking to this page for answers.
+```
+class Dog:
+     kind = "canine"
+ 
+     def __init__(self, breed, age):
+          self.breed = breed 
+          self.age = age
+          self.tricks = []
+
+     def addTrick(self, trick):
+          self.tricks.append(trick)
+
+     def bark(self):
+          return "arf"
+```
+```
+from dog import Dog
+
+Rex = Dog("Golden", 8)      
+Spot = Dog("Pit Bull", 12)  
+Rex.addTrick("roll over")  
+Spot.addTrick("sit")       
+Spot.addTrick("play dead") 
+
+print(Rex.kind)         
+print(Spot.kind)
+print(Rex.breed)         
+print(Rex.age)    
+print(Spot.breed)
+print(Spot.age)
+print(Rex.tricks)       
+print(Spot.tricks)
+
+Spot.age += 1              
+Spot.weight = 70            # this is bad form.
+
+print(Spot.age)            
+print(Spot.weight)          # you're allowed to do this, but ew.
+print(Spot.bark())  
+```
