@@ -119,3 +119,13 @@ print(Spot.age)
 print(Spot.weight)          # you're allowed to do this, but ew.
 print(Spot.bark())  
 ```
+
+## Fancy LED
+
+<p align="center">
+<img src="https://github.com/jbailey24/CircuitPython/blob/main/media/IMG_0966.jpg?raw=true" width="300">
+</p>
+
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/fancyLED.py">Link to Library</a> 
+###### <a href="https://github.com/jbailey24/CircuitPython/blob/main/fancyLEDrun.py">Link to Code</a>
+
